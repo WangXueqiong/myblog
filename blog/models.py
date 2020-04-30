@@ -1,5 +1,5 @@
 from django.db import models
-
+# 创建类生成数据库表名与字段
 class Article(models.Model):
     title = models.CharField(max_length=32, default='Title')
     content = models.TextField(null=True)

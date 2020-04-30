@@ -5,9 +5,12 @@
     <title>Edit</title>
 </head>
 <body>
+<!--使用django配置方法-->
 <form action="{% url 'blog:edit_action' %}" method="post">
+    <!-- django请求方式为post时，需要写上 -->
     {% csrf_token %}
     <label>文章标题
+        <!-- 获取文章id，不展示 -->
         <input type="hidden"  name="id" value="{{ article.id }}">
         <input type="text" name="title" value="{{ article.title }}">
         <br/>

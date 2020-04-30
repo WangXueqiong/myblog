@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+'''自带的应用+自己创建的应用blog'''
 INSTALLED_APPS = [
     'django.contrib.admin',
     #账号：wangxueqiong   邮箱：365719444@qq.com    密码：wangxueqiong

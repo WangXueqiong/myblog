@@ -1,3 +1,4 @@
+<!-- 文章内容页面 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,13 @@
     <title>Title</title>
 </head>
 <body>
+<!--获取文章标题-->
 <h1>{{ article.title }}</h1>
 <br/>
+<!--获取文章内容-->
 <h3>{{ article.content }}</h3>
 <br/>
+<!--使用django配置方法,blog是当前应用的url中app_name值，update_action是当前应用下url中name值,article.id为传参-->
 <a href="{% url 'blog:update_action' article.id%}">修改文章</a>
 </body>
 </html>

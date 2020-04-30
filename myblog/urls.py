@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+'''配置一级url'''
 urlpatterns = [
+    # 自带的后台admin模板
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls', namespace='blog')),
+    # 个人的blog应用
+    path('blog/', include('blog.urls')),
 ]
